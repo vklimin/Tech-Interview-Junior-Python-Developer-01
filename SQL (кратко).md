@@ -63,7 +63,7 @@ SELECT 1 + 2, 10 / 5
 ## Агрегация числовых данных
 ```sql
 SELECT SUM(num), AVG(num), MAX(num) 
-FROM `texts`
+FROM texts
 ```
 
 ## Группировка данных
