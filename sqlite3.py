@@ -15,8 +15,6 @@ cursor.execute('''
     VALUES (1, "Alice")
 ''')
 
-conn.commit()
-
 cursor.execute('''
     SELECT * FROM test
 ''')
@@ -24,4 +22,5 @@ cursor.execute('''
 for row in cursor.fetchall():
     print(row)
 
+conn.commit()
 conn.close()
